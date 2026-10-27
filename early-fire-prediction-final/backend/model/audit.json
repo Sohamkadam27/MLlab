@@ -1,0 +1,25 @@
+{
+  "original": {
+    "pressure_only_auc": 0.987,
+    "distance_from_site_auc": 0.995,
+    "median_pressure_gap_hpa": 17.6,
+    "n_rows": 11688,
+    "y_rows": 6421
+  },
+  "corrected": {
+    "train": "2020-2021",
+    "test": "2022-2023",
+    "label": "any NASA FIRMS detection in the study box that day",
+    "test_rows": 5843,
+    "test_fire_days": 170,
+    "base_rate": 0.233,
+    "roc_auc": 0.677,
+    "pr_auc": 0.344,
+    "auc_ci95": [
+      0.638,
+      0.713
+    ],
+    "season_only_auc": 0.572,
+    "weather_only_auc": 0.684
+  }
+}

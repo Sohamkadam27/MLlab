@@ -1,0 +1,115 @@
+{
+  "split": {
+    "train": "2020-2022",
+    "test": "2023",
+    "train_rows": 14917,
+    "test_rows": 3189,
+    "test_fire_rate": 0.0844
+  },
+  "target_recall": 0.97,
+  "imputation": {
+    "precipitation": {
+      "value": 0.0
+    },
+    "surface_pressure": {
+      "value": 933.0748291
+    },
+    "cloud_cover": {
+      "value": 0.9
+    },
+    "soil_temperature_0_to_7cm": {
+      "intercept": -4.429146397489795,
+      "coef": [
+        1.0945647434951131,
+        0.053883470805787995,
+        0.17813265817493515
+      ]
+    },
+    "soil_temperature_7_to_28cm": {
+      "intercept": 3.2145633016057964,
+      "coef": [
+        0.8060347686311372,
+        0.039465530594697366,
+        0.016052371711708768
+      ]
+    },
+    "soil_moisture_0_to_7cm": {
+      "intercept": 0.24613871719440766,
+      "coef": [
+        -0.004688720451191819,
+        0.0005412755762343065,
+        0.0004374226131848231
+      ]
+    },
+    "soil_moisture_7_to_28cm": {
+      "intercept": 0.25865629610989677,
+      "coef": [
+        -0.003950990990259805,
+        0.00046086361741922636,
+        -6.278451867074116e-05
+      ]
+    }
+  },
+  "medians": {
+    "temperature_2m": 19.789999,
+    "relative_humidity_2m": 39.03200531,
+    "precipitation": 0.0,
+    "surface_pressure": 933.0748291,
+    "cloud_cover": 0.9,
+    "wind_speed_10m": 8.759178,
+    "soil_temperature_0_to_7cm": 21.828,
+    "soil_temperature_7_to_28cm": 23.21100044,
+    "soil_moisture_0_to_7cm": 0.136,
+    "soil_moisture_7_to_28cm": 0.157
+  },
+  "full": {
+    "low_max": 0.9681,
+    "high_min": 0.9774,
+    "roc_auc": 0.9873,
+    "pr_auc": 0.9691,
+    "precision_at_high": 0.9412,
+    "recall_at_high": 0.9517,
+    "test_bucket_summary": {
+      "Low": {
+        "samples": 2899,
+        "actual_fires": 7,
+        "fire_rate": 0.0024
+      },
+      "Medium": {
+        "samples": 18,
+        "actual_fires": 6,
+        "fire_rate": 0.3333
+      },
+      "High": {
+        "samples": 272,
+        "actual_fires": 256,
+        "fire_rate": 0.9412
+      }
+    }
+  },
+  "basic": {
+    "low_max": 0.0005,
+    "high_min": 0.0021,
+    "roc_auc": 0.5431,
+    "pr_auc": 0.1025,
+    "precision_at_high": 0.1147,
+    "recall_at_high": 0.4721,
+    "test_bucket_summary": {
+      "Low": {
+        "samples": 126,
+        "actual_fires": 7,
+        "fire_rate": 0.0556
+      },
+      "Medium": {
+        "samples": 1956,
+        "actual_fires": 135,
+        "fire_rate": 0.069
+      },
+      "High": {
+        "samples": 1107,
+        "actual_fires": 127,
+        "fire_rate": 0.1147
+      }
+    }
+  }
+}
